@@ -1,0 +1,111 @@
+:root {
+    --bluer: #08298C;
+    --greyshade: rgb(54, 54, 54);
+}
+
+* {
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+header {
+    text-align: center;
+}
+
+#title {
+    color: white;
+
+    text-shadow: 3px 3px 6px black;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+    transition: all 3s ease;
+    text-shadow: 3px 3px 6px black
+}
+
+#start {
+    font-size: 2.5rem;
+    border: solid 2px black;
+    color: white;
+    background-color: var(--bluer);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px var(--greyshade), -2px -2px 2px var(--greyshade), -2px 2px 2px var(--greyshade), 2px -2px 2px var(--greyshade);
+    transition: all 0.5s ease-in;
+}
+
+#start:hover {
+    box-shadow: 1px 1px 6px var(--bluer), -1px -1px 6px var(--bluer), 1px -1px 6px var(--bluer), -1px 1px 6px var(--bluer);
+    zoom: 105%;
+    transition: all 0.2s ease-in;
+}
+
+#start:active {
+    box-shadow: inset 1px 1px 4px var(--greyshade), inset -1px -1px 4px var(--greyshade), inset 1px -1px 4px var(--greyshade), inset -1px 1px 4px var(--greyshade);
+}
+
+#trivia {
+    transition: all 5s linear;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quiz {
+    width: 100%;
+    /* max-width: 80%; */
+    align-self: center;
+    text-align: start;
+    background-color: rgba(36, 36, 36, 0.623);
+    padding: 50px;
+}
+
+#quiz label {
+    font-size: 1.2rem;
+    padding-left: 10px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+button {
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#response {
+    height: 50px;
+    width: 100px;
+    font-size: 1.2rem;
+}
+
+form {
+    background-color: rgba(36, 36, 36, 0.623);
+    padding: 50px;
+}
